@@ -395,7 +395,7 @@ public class LunarDiplomacy extends BasicQuestHelper
 		pickaxe = new ItemRequirement("Any pickaxe", ItemCollections.PICKAXES).isNotConsumed();
 		hammer = new ItemRequirement("Hammer", ItemCollections.HAMMER).isNotConsumed();
 		needle = new ItemRequirement("Needle", ItemID.NEEDLE).isNotConsumed();
-		thread = new ItemRequirement("Thread", ItemID.THREAD).isNotConsumed();
+		thread = new ItemRequirement("Thread", ItemID.THREAD, 2).isNotConsumed();
 		combatGear = new ItemRequirement("Combat gear", -1, -1).isNotConsumed();
 		combatGear.setDisplayItemId(BankSlotIcons.getCombatGear());
 		coins400 = new ItemRequirement("Coins", ItemCollections.COINS, 400);
@@ -854,7 +854,7 @@ public class LunarDiplomacy extends BasicQuestHelper
 	@Override
 	public List<ItemRequirement> getItemRequirements()
 	{
-		return Arrays.asList(bullseyeLantern, tinderboxHighlighted, guam, marrentill, dramenStaff, airTalisman, earthTalisman,
+		return Arrays.asList(bullseyeLantern, coins400, tinderboxHighlighted, guam, marrentill, dramenStaff, airTalisman, earthTalisman,
 			fireTalisman, waterTalisman, pickaxe, pestle, hammer, thread, needle, spade);
 	}
 
